@@ -5,11 +5,11 @@ import oo.behavioral.visitor.ProductVisitor;
 public class ExternalProduct implements Product {
 
 	private final String name;
-	private final long externalPrice;
+	private final long price;
 	
-	public ExternalProduct(String name, long externalPrice) {
+	public ExternalProduct(String name, long price) {
 		this.name = name;
-		this.externalPrice = externalPrice;
+		this.price = price;
 	}
 
 	@Override
@@ -22,6 +22,6 @@ public class ExternalProduct implements Product {
 	}
 
 	public long getExternalPrice() {
-		return externalPrice;
+		return price;
 	}
 }

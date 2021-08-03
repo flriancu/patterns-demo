@@ -1,35 +1,25 @@
 package oo.structural.facade;
 
 import oo.structural.facade.system.customer.Customer;
-import oo.structural.facade.system.customer.CustomerRegistration;
-import oo.structural.facade.system.customer.CustomerRepository;
-import oo.structural.facade.system.customer.NotificationService;
+import oo.structural.facade.system.customer.Facade;
 
 public class Client {
-	private CustomerRepository repository;
-	private CustomerRegistration registration;
-	private NotificationService notification;
+	private Facade facade;
 
 	public void registerCustomer(Customer customer) {
-		if (repository.getCustomerByEmail(customer.getEmail()) == null) {
-			registration.registerCustomer(customer);
-			notification.sendActivationLink(customer);
-		} else {
-			throw new IllegalArgumentException("Customer already registered with email '" + customer.getEmail() + "'");
-		}
+		facade.registerCustomer(customer);
 	}
 
 	public static void main(String[] args) {
 		Client client = new Client();
 		// setup client
-		// client depends of a lot on internal components -- looots of COUPLING
-		client.repository = new CustomerRepository();
-		client.registration = new CustomerRegistration();
-		client.notification = new NotificationService();
+		// client NOW depends just on the facade. The facade interacts with the
+		// internal components.
+		// it HIDES the implementation details of the system.
+		// LOWERS CLIENT COUPLING.
 
-		// TODO: have client depend only on a facade. Move collaborations between internal components IN that Facadade.
-		
-		//the actual operation to invoke
+		client.facade = new Facade();
+
 		client.registerCustomer(new Customer("John Doe", "john.doe@pentagon.us"));
 	}
 }

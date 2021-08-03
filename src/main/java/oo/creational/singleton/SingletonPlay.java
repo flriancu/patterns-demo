@@ -2,14 +2,16 @@ package oo.creational.singleton;
 
 public class SingletonPlay {
 
-	public static void main(String[] args) {
-		System.out.println("Singleton data: " + Singleton.getInstance().getData());
-		Singleton.getInstance().setData("AAA");
-		System.out.println("Singleton data: " + Singleton.getInstance().getData());
-		Singleton.getInstance().setData("BBB");
-		System.out.println("Singleton data: " + Singleton.getInstance().getData());
+	public static void businessCode() {
+		Singleton s = new Singleton();
+		// TODO transform the Singleton class in a singleton
+		System.out.println("Singleton existing data: " + s.getData());
+		System.out.println("Singleton instance : " + s);
+		s.setData("data1");
+	}
 
-		// 2 an example of EAGER singleton in JDK
-		Runtime.getRuntime().totalMemory();
+	public static void main(String[] args) {
+		businessCode();
+		businessCode();
 	}
 }

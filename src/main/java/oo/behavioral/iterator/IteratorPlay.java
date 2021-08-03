@@ -13,15 +13,16 @@ public class IteratorPlay {
 			System.out.println("Element: " + element);
 		}
 
-		// 2 simpler ... (Iterable)
+		// 3 TODO rewrite simpler, with foreach statement ... (Iterable)
 
-		// 3 custom iterator
+		// 2 TODO write an iterator that sweeps over an array
 
 		String[] array = new String[] { "1", "2", "3" };
-		Iterator<String> it2 = new MyArrayIterator(array);
-		while (it2.hasNext()) {
-			String element = it2.next();
-			System.out.println("Element: " + element);
-		}
+		// TODO implement an Array iterator
+		// Iterator<String> it2 = new MyArrayIterator(array);
+		// while (it2.hasNext()) {
+		// String element = it2.next();
+		// System.out.println("Element: " + element);
+		// }
 	}
 }

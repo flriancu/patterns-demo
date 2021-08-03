@@ -15,11 +15,14 @@ public class FactoryPlay {
 		Distributor distributor = new Distributor(factory);
 
 		List<Object> kitchen = distributor.getKitchenFurniture();
+		
+		// TODO: create another product
 
 		System.out.println("Delivered tables: " + kitchen);
 
 		// 2
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		
 		
 	}
 }

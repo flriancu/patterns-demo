@@ -4,11 +4,11 @@ public class BuilderPlay {
 
 	public static void main(String[] args) {
 		Customer customer = new Customer.Builder()
-			.withName("John Doe")
-			.withLabel("Label1")
-			.withAddress(new Address.Builder()
-				.withStreetName("Viorele")
-				.build())
+			.withLabel("Label1") 
+			// TODO set name	
+			// TODO set address
+			// TODO set phone (must create a with...() method)
+			// TODO set Address
 			.build();
 		
 		System.out.println("Customer name: " + customer.getName());

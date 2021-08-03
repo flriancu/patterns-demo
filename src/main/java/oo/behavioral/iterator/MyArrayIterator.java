@@ -1,30 +1,10 @@
 package oo.behavioral.iterator;
 
-import java.util.Iterator;
 
-public class MyArrayIterator implements Iterator<String> {
-	private int index;
-
+public class MyArrayIterator { // TODO implements Iterator<String> {
 	private final String[] array;
 
 	public MyArrayIterator(String[] array) {
 		this.array = array;
 	}
-
-	@Override
-	public boolean hasNext() {
-		return index < array.length;
-	}
-
-	@Override
-	public String next() {
-		return array[index++];
-	}
-
-	@Override
-	public void remove() {
-		throw new UnsupportedOperationException();
-
-	}
-
 }

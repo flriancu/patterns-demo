@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "simple-ws", targetNamespace = "http://training.ibm.com/simple-ws/", wsdlLocation = "file:/D:/workspace-training/oo-patterns-done/src/main/resources/wsdl/simple-ws.wsdl")
+@WebServiceClient(name = "simple-ws", targetNamespace = "http://training.ibm.com/simple-ws/", wsdlLocation = "file:/D:/workspace-training/oo-patterns/src/main/resources/wsdl/simple-ws.wsdl")
 public class SimpleWs_Service
     extends Service
 {
@@ -30,7 +30,7 @@ public class SimpleWs_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/D:/workspace-training/oo-patterns-done/src/main/resources/wsdl/simple-ws.wsdl");
+            url = new URL("file:/D:/workspace-training/oo-patterns/src/main/resources/wsdl/simple-ws.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

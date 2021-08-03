@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.io.OutputStream;
 import java.io.PrintStream;
 
+import oo.behavioral.template.byhand.EmailCustomerProcessor;
 import oo.gui.MyFrame;
 
 public class TemplateMethodPlay {
@@ -13,7 +14,8 @@ public class TemplateMethodPlay {
 
 		OutputStream myOutputStream = new MyJTextAreaOutputStream(myFrame.textArea);
 
-		// Look Ma'! An Adapter Pattern! (PrintWriter wraps the OutputStream we provided)
+		// Look Ma'! An Adapter Pattern! PrintWriter wraps the OutputStream we
+		// provided.
 		PrintStream printStream = new PrintStream(myOutputStream);
 
 		// override the standard out
@@ -28,9 +30,8 @@ public class TemplateMethodPlay {
 				System.out.println("Button Clicked");
 			}
 		});
-		
-		
+
 		// 2: a custom-made example
-		// new EmailCustomerProcessor().registerCustomer();
+		new EmailCustomerProcessor().registerCustomer();
 	}
 }
