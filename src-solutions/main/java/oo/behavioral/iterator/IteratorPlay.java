@@ -13,11 +13,7 @@ public class IteratorPlay {
 			System.out.println("Element: " + element);
 		}
 
-		// 2 simpler ... (Iterable)
-
-		// 3 custom iterator
-
-		String[] array = new String[] { "1", "2", "3" };
+		String[] array = new String[] { "1", "2", "3" };		
 		Iterator<String> it2 = new MyArrayIterator(array);
 		while (it2.hasNext()) {
 			String element = it2.next();

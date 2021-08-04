@@ -8,6 +8,7 @@ import java.util.List;
 import oo.structural.adapter.external.LegacySMSSender;
 
 public class AdapterPlay {
+
 	public static void main(String[] args) {
 		LegacySMSSender externalSystemsToAdapt = new LegacySMSSender();
 		SMSSender adapter = new SMSSenderAdapter(externalSystemsToAdapt);
@@ -35,4 +36,5 @@ public class AdapterPlay {
 	private static void businessCodeWithList(List<String> list) {
 		System.out.println("Arrays as List: " + list);
 	}
+
 }

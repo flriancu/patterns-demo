@@ -25,7 +25,7 @@ public class Phone {
 	public String toString() {
 		return prefix + "-" + localNumber;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Phone)) {
@@ -41,4 +41,5 @@ public class Phone {
 		return 17 * prefix.hashCode() + localNumber.hashCode(); // and here: NPE
 		// Defensive programming should not fail for nulls
 	}
+	
 }

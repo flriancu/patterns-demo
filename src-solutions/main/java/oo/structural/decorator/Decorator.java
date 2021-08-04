@@ -10,16 +10,17 @@ public class Decorator implements Subject {
 
 	@Override
 	public void methodA() {
-		System.out.println("Decorator: inainte de metoda A");
+		System.out.println("Decorator: before method A");
 		delegate.methodA();
-		System.out.println("Decorator: dupa metoda A");
+		System.out.println("Decorator: after method A");
 	}
 
 	
 	@Override
 	public void methodB() {
-		System.out.println("Decorator: inainte de metoda B");
+		System.out.println("Decorator: before method B");
 		delegate.methodB();
-		System.out.println("Decorator: inainte de metoda B");
+		System.out.println("Decorator: after method B");
 	}
+
 }

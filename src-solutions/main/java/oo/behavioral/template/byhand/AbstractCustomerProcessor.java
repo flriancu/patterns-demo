@@ -2,7 +2,7 @@ package oo.behavioral.template.byhand;
 
 public abstract class AbstractCustomerProcessor {
 	public void registerCustomer() {
-		System.out.println("Start register the customer");
+		System.out.println("Start registering the customer");
 		
 		// get the customer from the database
 		Customer customer = new Customer();
@@ -32,6 +32,5 @@ public abstract class AbstractCustomerProcessor {
 		// do some validations
 		return true;
 	}
-	
 	
 }

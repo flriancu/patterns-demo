@@ -3,6 +3,7 @@ package oo.structural.adapter;
 import oo.structural.adapter.external.LegacySMSSender;
 
 public class AdapterPlay {
+
 	public static void main(String[] args) {
 		LegacySMSSender externalSystemsToAdapt = new LegacySMSSender();
 		
@@ -14,4 +15,5 @@ public class AdapterPlay {
 	private static void businessCodeWithAdapter(SMSSender smsSender) {
 		smsSender.sendSMS(new Phone("+4", "0720099111"), "Hello World!");
 	}
+	
 }

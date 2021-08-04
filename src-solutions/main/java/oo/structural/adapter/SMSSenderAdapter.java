@@ -6,6 +6,7 @@ import oo.structural.adapter.external.LegacySMSSender;
  * Concrete Adapter
  */
 public class SMSSenderAdapter implements SMSSender {
+
 	private final LegacySMSSender adaptee;
 
 	public SMSSenderAdapter(LegacySMSSender adaptee) {
@@ -18,4 +19,5 @@ public class SMSSenderAdapter implements SMSSender {
 		int status = adaptee.sendSMS(phoneNumber, message);
 		return status == LegacySMSSender.SUCCESS;
 	}
+	
 }

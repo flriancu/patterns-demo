@@ -12,4 +12,5 @@ public class EmailCustomerProcessor extends AbstractCustomerProcessor {
 	protected void notifyCustomerOfSuccess(Customer customer) {
 		System.out.println("Also send an email to notify the registration success");
 	}
+	
 }

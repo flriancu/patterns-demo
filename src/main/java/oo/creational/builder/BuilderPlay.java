@@ -3,6 +3,7 @@ package oo.creational.builder;
 public class BuilderPlay {
 
 	public static void main(String[] args) {
+		// Example 1
 		Customer customer = new Customer.Builder()
 			.withLabel("Label1") 
 			// TODO set name	
@@ -14,8 +15,10 @@ public class BuilderPlay {
 		System.out.println("Customer name: " + customer.getName());
 		System.out.println("Customer address: " + customer.getAddress().getStreetName());
 		
-		// 2
+		// Example 2
 		String s = new StringBuilder()
 			.toString();
+
+		// TODO explore the StringBuilder class. No solutions provided.
 	}
 }

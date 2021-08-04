@@ -10,19 +10,19 @@ import oo.creational.factory.valeni.ValeniFurnitureFactory;
 public class FactoryPlay {
 
 	public static void main(String[] args) {
+		// Example 1
 		FurnitureFactory factory = new ValeniFurnitureFactory();
 
 		Distributor distributor = new Distributor(factory);
 
 		List<Object> kitchen = distributor.getKitchenFurniture();
 		
-		// TODO: create another product
+		System.out.println("Delivered items of furniture: " + kitchen);
 
-		System.out.println("Delivered tables: " + kitchen);
-
-		// 2
+		// Example 2
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		
-		
+		// TODO: explore how to use this class and how it's similar
+		// to our furniture factory. No solutions provided.
 	}
 }

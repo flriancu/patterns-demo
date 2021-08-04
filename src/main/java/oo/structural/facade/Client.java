@@ -6,6 +6,7 @@ import oo.structural.facade.system.customer.CustomerRepository;
 import oo.structural.facade.system.customer.NotificationService;
 
 public class Client {
+
 	private CustomerRepository repository;
 	private CustomerRegistration registration;
 	private NotificationService notification;
@@ -32,4 +33,5 @@ public class Client {
 		//the actual operation to invoke
 		client.registerCustomer(new Customer("John Doe", "john.doe@pentagon.us"));
 	}
+	
 }

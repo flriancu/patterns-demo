@@ -18,6 +18,6 @@ public class MyJTextAreaOutputStream extends OutputStream {
 		String existingText = textArea.getText();
 		char newChar = (char) b;
 		textArea.setText(existingText + newChar);
-
 	}
+	
 }

@@ -10,10 +10,10 @@ public class StrategyPlay {
 
 		List<Integer> list = Arrays.asList(5, 3, 2, 4, 1, 6);
 
-		System.out.println("Initial List: " + list);
+		System.out.println("list (before): " + list);
 		Comparator<Integer> compareAlgorithm = new AscendingComparator();
 		Collections.sort(list, compareAlgorithm);
-		System.out.println("List: " + list);
+		System.out.println("list (after): " + list);
 	}
-	
+
 }

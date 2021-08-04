@@ -24,8 +24,7 @@ public class VisitorPlay {
 		for (Product product : productList) {
 			product.accept(totalVisitor);
 		}
-		System.out.println("Total price: " + totalVisitor.getTotal());
-
+		System.out.println("Total price: " + totalVisitor.getTotal());	
 	}
 
 }

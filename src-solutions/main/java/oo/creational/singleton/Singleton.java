@@ -1,6 +1,7 @@
 package oo.creational.singleton;
 
 public class Singleton {
+
 	private static Singleton INSTANCE;
 
 	private Singleton() {

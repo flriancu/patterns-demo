@@ -35,9 +35,9 @@ You can use either Eclipse or a compatible setup, for example:
 ### Preparing the project files
 
 To easily create a project for Eclipse or any other compatible IDE, copy the files from
-`tools/ide/eclipse` into the project root. This will copy the necessary configuration
-into the project directory. Once you have done that, you will be able to import the project
-into your IDE. For example:
+`tools/ide/eclipse` into the project root (next to this file). This will copy the necessary
+configuration into the project directory. Once you have done that, you will be able to import
+the project into your IDE. For example:
 
 -   for Eclipse: `Import > General > Import Existing Project into Workspace`
 -   for VS Code: `File > Open Folder...`

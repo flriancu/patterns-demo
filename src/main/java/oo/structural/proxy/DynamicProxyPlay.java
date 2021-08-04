@@ -7,6 +7,7 @@ import oo.structural.decorator.RealSubject;
 import oo.structural.decorator.Subject;
 
 public class DynamicProxyPlay {
+
 	public static void main(String[] args) throws Exception {
 		Subject realSubject = new RealSubject();
 
@@ -39,4 +40,5 @@ public class DynamicProxyPlay {
 		}
 
 	}
+	
 }

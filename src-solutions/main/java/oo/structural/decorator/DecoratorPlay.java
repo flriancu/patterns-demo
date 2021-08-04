@@ -19,8 +19,8 @@ public class DecoratorPlay {
 	}
 
 	private static void codClient(Subject subject) {
-		System.out.println("Cod client: Inainte de a apela metoda A");
+		System.out.println("client code: before calling method A");
 		subject.methodA();
-		System.out.println("Cod client: Dupa apelarea metodei A");
+		System.out.println("client code: after calling method A");
 	}
 }

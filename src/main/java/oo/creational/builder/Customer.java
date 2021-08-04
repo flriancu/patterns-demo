@@ -13,6 +13,7 @@ public class Customer {
 	private Date createDate;
 
 	public static class Builder {
+
 		private final Customer customer = new Customer();
 
 		public Builder withName(String name) {
@@ -33,6 +34,7 @@ public class Customer {
 		public Customer build() {
 			return customer;
 		}
+		
 	}
 
 	public Address getAddress() {

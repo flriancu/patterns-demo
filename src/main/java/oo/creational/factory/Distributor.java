@@ -14,11 +14,14 @@ public class Distributor {
 	}
 
 	public List<Object> getKitchenFurniture() {
-		List<Object> tables = new ArrayList<>();
-		tables.add(factory.createTable());
+		List<Object> itemsOfFurniture = new ArrayList<>();
+
+		itemsOfFurniture.add(factory.createTable());
 		for (int i = 0; i < 4; i++) {
-			tables.add(factory.createChair());
+			itemsOfFurniture.add(factory.createChair());
 		}
-		return tables;
+
+		return itemsOfFurniture;
 	}
+	
 }

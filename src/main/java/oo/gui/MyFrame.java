@@ -17,7 +17,6 @@ public class MyFrame extends JFrame {
 	public JTextField textField = new JTextField(8);
 
 	public MyFrame() {
-
 		getContentPane().setLayout(new GridLayout(1, 2, 20, 20));
 		getContentPane().add(button1);
 		getContentPane().add(panel1);

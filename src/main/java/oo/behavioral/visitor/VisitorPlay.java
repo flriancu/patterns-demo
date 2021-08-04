@@ -22,10 +22,12 @@ public class VisitorPlay {
 		System.out.println("Total price: " + totalVisitor.getTotal());
 		
 		// TODO ReportGenerator
-//		ReportGeneratorVisitor reportVisitor = new ReportGeneratorVisitor();
-//		for (Product product : productList) {
-//			product.accept(reportVisitor);
-//		}
+		/*
+		ReportGeneratorVisitor reportVisitor = new ReportGeneratorVisitor();
+		for (Product product : productList) {
+			product.accept(reportVisitor);
+		}
+		*/
 
 	}
 

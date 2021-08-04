@@ -14,8 +14,8 @@ public class TemplateMethodPlay {
 
 		OutputStream myOutputStream = new MyJTextAreaOutputStream(myFrame.textArea);
 
-		// Look Ma'! An Adapter Pattern! PrintWriter wraps the OutputStream we
-		// provided.
+		// Example 1
+		// Look Ma'! An Adapter Pattern! (PrintWriter wraps the OutputStream we provided)
 		PrintStream printStream = new PrintStream(myOutputStream);
 
 		// override the standard out
@@ -30,8 +30,9 @@ public class TemplateMethodPlay {
 				System.out.println("Button Clicked");
 			}
 		});
-
-		// 2: a custom-made example
+		
+		// Example 2: a custom-made example
 		new EmailCustomerProcessor().registerCustomer();
 	}
+	
 }

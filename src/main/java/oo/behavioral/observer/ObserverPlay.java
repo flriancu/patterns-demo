@@ -8,7 +8,8 @@ public class ObserverPlay {
 	public static void main(String[] args) {
 		MyFrame myFrame = new MyFrame();
 		
-		// polymorphic assignment - refer o implementare concreta printr-o interfata pe care o implementeaza
+		// Polymorphic assignment: we refer to a concrete implementation,
+		// via an interface that this implementation implements
 		ActionListener actionListener = new MyButtonActionListener();
 		
 		myFrame.button1.addActionListener(actionListener);

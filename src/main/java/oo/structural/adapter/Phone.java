@@ -39,4 +39,5 @@ public class Phone {
 	public int hashCode() {
 		return 17 * prefix.hashCode() + localNumber.hashCode(); // and here ?
 	}
+	
 }
