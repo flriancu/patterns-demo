@@ -7,16 +7,17 @@ Various patterns for object-oriented programming.
 
 ## Setup
 
-### Installing Java SDK
+### Installing requirements
 
-This project aims to be compatible with the latest JDK versions. To get it, follow these steps:
+This project aims to be compatible with the latest JDK versions.
+
+To get the requirements, follow these steps:
 
 -   Windows:
     -   `choco install -y openjdk maven` for the latest JDK
     -   ***or,*** install the requirements by hand: [OpenJDK](https://jdk.java.net/), [Maven](https://maven.apache.org/)
 -   Linux (Debian/Ubuntu):
     -   `apt install -y default-jdk maven` for the distro's default JDK (in this case, it's some version of `openjdk`)
-    -   ***or,*** `apt install -y openjdk-16-jdk` for an explicit JDK (in this case, version `16`)
 
 If licensing issues prevent you from using OpenJDK, you can use [AdoptOpenJDK](https://adoptopenjdk.net/installation).
 
