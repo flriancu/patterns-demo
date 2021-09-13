@@ -17,7 +17,7 @@ To get the requirements, follow these steps:
     -   `choco install -y openjdk maven` for the latest JDK
     -   ***or,*** install the requirements by hand: [OpenJDK](https://jdk.java.net/), [Maven](https://maven.apache.org/)
 -   Linux (Debian/Ubuntu):
-    -   `apt install -y default-jdk maven` for the distro's default JDK (in this case, it's some version of `openjdk`)
+    -   `apt install -y default-jdk maven` for the distro's default JDK (in this case, it's some version of `openjdk-XX-jdk`, where `XX` is a major version number)
 
 If licensing issues prevent you from using OpenJDK, you can use [AdoptOpenJDK](https://adoptopenjdk.net/installation).
 
