@@ -9,13 +9,16 @@ Various patterns for object-oriented programming.
 
 ### Installing Java SDK
 
-This project aims to be compatible with the latest JDK versions; to get it:
+This project aims to be compatible with the latest JDK versions. To get it, follow these steps:
 
 -   Windows:
-    -   `choco install -y openjdk` for the latest JDK
+    -   `choco install -y openjdk maven` for the latest JDK
+    -   ***or,*** install the requirements by hand: [OpenJDK](https://jdk.java.net/), [Maven](https://maven.apache.org/)
 -   Linux (Debian/Ubuntu):
-    -   `apt install -y default-jdk` for the distro's default JDK
-    -   `apt install -y openjdk-16-jdk` for an explicit JDK
+    -   `apt install -y default-jdk maven` for the distro's default JDK (in this case, it's some version of `openjdk`)
+    -   ***or,*** `apt install -y openjdk-16-jdk` for an explicit JDK (in this case, version `16`)
+
+If licensing issues prevent you from using OpenJDK, you can use [AdoptOpenJDK](https://adoptopenjdk.net/installation).
 
 To verify your installation:
 
@@ -35,15 +38,18 @@ You can use either Eclipse or a compatible setup, for example:
 ### Preparing the project files
 
 To easily create a project for Eclipse or any other compatible IDE, copy the files from
-`tools/ide/eclipse` into the project root (next to this file). This will copy the necessary
-configuration into the project directory. Once you have done that, you will be able to import
-the project into your IDE. For example:
+`tools/ide/eclipse` into the project root (next to this `README` file). This will copy the
+necessary configuration into the project directory. Once you have done that, you will be able
+to import the project into your IDE. For example:
 
 -   for Eclipse: `Import > General > Import Existing Project into Workspace`
 -   for VS Code: `File > Open Folder...`
 
 
 ## Running
+
+Each particular pattern (iterator, observer, etc.) is a self-contained project, with their own `main` function.
+
 
 ### Using the solutions
 
