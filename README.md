@@ -13,13 +13,8 @@ This project aims to be compatible with the latest JDK versions.
 
 To get the requirements, follow these steps:
 
--   Windows:
-    -   `choco install -y openjdk maven` for the latest JDK
-    -   ***or,*** install the requirements by hand: [OpenJDK](https://jdk.java.net/), [Maven](https://maven.apache.org/)
--   Linux (Debian/Ubuntu):
-    -   `apt install -y default-jdk maven` for the distro's default JDK (in this case, it's some version of `openjdk-XX-jdk`, where `XX` is a major version number)
-
-If licensing issues prevent you from using OpenJDK, you can use [AdoptOpenJDK](https://adoptopenjdk.net/installation).
+-   install a Java Development Kit: [there are many](https://whichjdk.com/), and the best one at the moment is [Eclipse Temurin](https://adoptium.net/installation/)
+-   install [Maven](https://maven.apache.org/)
 
 To verify your installation:
 
