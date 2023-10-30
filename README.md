@@ -13,10 +13,10 @@ This project aims to be compatible with the latest JDK versions.
 
 To get the requirements, follow these steps:
 
--   install a Java Development Kit: [there are many](https://whichjdk.com/), and the best one at the moment is [Eclipse Temurin](https://adoptium.net/installation/)
+-   install a Java Development Kit (JDK): [there are many](https://whichjdk.com/), and the best one at the moment is [Eclipse Temurin](https://adoptium.net/installation/)
 -   install [Maven](https://maven.apache.org/)
 
-To verify your installation:
+To verify your JDK installation:
 
 -   check the compiler: `javac -version`
 -   check the application launcher: `java -version`
